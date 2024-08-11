@@ -4,7 +4,7 @@ public:
         if( numRows == 1 )
             return s;
 
-        char grid[(int)2e3][(int)2e3];
+        char grid[(int)1e3 + 5][(int)1e3 + 5];
         memset(grid, '/', sizeof grid);
 
         pair<int,int>cell = {0, 0};
@@ -29,8 +29,8 @@ public:
         }
 
         string ans;
-        for( int i = 0; i < 2e3; i++ )
-            for( int j = 0; j < 2e3; j++ )
+        for( int i = 0; i < 1e3 + 5; i++ )
+            for( int j = 0; j < 1e3 + 5; j++ )
                 if( grid[i][j] != '/' )
                     ans += grid[i][j];
 
